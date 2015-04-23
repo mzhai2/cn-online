@@ -133,6 +133,8 @@ public class SparkApi
 				List<DEPTree> trees = new ArrayList<>();
 				while ((tree=reader.next())!= null) {
 					trees.add(tree);
+//					ps.println(tree.toString()+"\n");
+
 				}
 				((AbstractNERecognizer)ner).onlineTrain(trees);
 				try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("ner.txt", true)))) {
