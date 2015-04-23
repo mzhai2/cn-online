@@ -10,24 +10,20 @@ import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import edu.emory.clir.clearnlp.collection.tree.PrefixTree;
 import edu.emory.clir.clearnlp.component.AbstractComponent;
 import edu.emory.clir.clearnlp.component.mode.dep.DEPConfiguration;
 import edu.emory.clir.clearnlp.component.mode.ner.AbstractNERecognizer;
 import edu.emory.clir.clearnlp.component.mode.ner.DefaultNERecognizer;
-import edu.emory.clir.clearnlp.component.mode.ner.EnglishNERecognizer;
 import edu.emory.clir.clearnlp.component.utils.GlobalLexica;
 import edu.emory.clir.clearnlp.component.utils.NLPUtils;
-import edu.emory.clir.clearnlp.dependency.DEPNode;
 import edu.emory.clir.clearnlp.dependency.DEPTree;
-import edu.emory.clir.clearnlp.ner.NERInfoList;
 import edu.emory.clir.clearnlp.reader.TSVReader;
 import edu.emory.clir.clearnlp.tokenization.AbstractTokenizer;
 import edu.emory.clir.clearnlp.util.lang.TLanguage;
 import static spark.Spark.post;
 public class SparkApi
 {
-	final static TLanguage language = TLanguage.CHINESE;
+	final static TLanguage language = TLanguage.ENGLISH;
 	private static ByteArrayOutputStream baos;
 	private static PrintStream ps;
 	private static InputStream is;
