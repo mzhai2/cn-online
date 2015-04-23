@@ -56,7 +56,7 @@ public class SparkApi
 		components = new AbstractComponent[]{tagger, morph, parser, ner};
 		
 		tokenizer  = NLPUtils.getTokenizer(language);
-		reader = new TSVReader(0, 1, 2, 3, 7, 4, 5, 6, -1, -1);
+		reader = new TSVReader(0, 1, 2, 3, 9, 4, 5, 6, 7, 8);
 	}
 	
 	public void processRaw(InputStream in, PrintStream out) throws Exception
