@@ -95,11 +95,19 @@
      	<artifactId>spark-core</artifactId>
      	<version>2.1</version>
     </dependency>
-
     <dependency>
       <groupId>edu.emory.clir</groupId>
       <artifactId>clearnlp-ner</artifactId>
       <version>1.0.1-SNAPSHOT</version>
     </dependency>
+        <dependency>
+      <groupId>edu.emory.clir</groupId>
+      <artifactId>clearnlp-general-en-pos</artifactId>
+      <version>3.1</version>
+    </dependency>    <dependency>
+      <groupId>edu.emory.clir</groupId>
+      <artifactId>clearnlp-general-en-dep</artifactId>
+      <version>3.1</version>
+	</dependency>
   </dependencies>
 </project>
