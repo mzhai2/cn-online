@@ -61,9 +61,9 @@ public class SparkApi
 		for (List<String> tokens : tokenizer.segmentize(in))
 		{
 			tree = new DEPTree(tokens);
-
 			for (AbstractComponent component : components)
 				component.process(tree);
+			((AbstractNERecognizer)ner).stripMISC(tree);
 			out.println(tree.toString()+"\n");
 
 		}
